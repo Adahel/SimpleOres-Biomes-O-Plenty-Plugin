@@ -1,0 +1,12 @@
+//Items
+item.copper_bucket_honey.name=Copper Bucket of Honey
+item.copper_bucket_blood.name=Copper Bucket of Blood
+item.copper_bucket_poison.name=Copper Bucket of Poison
+item.copper_bucket_hot_spring_water.name=Copper Bucket of Hot Spring Water
+
+//Tools
+item.copper_scythe.name=Copper Scythe
+item.tin_scythe.name=Tin Scythe
+item.mythril_scythe.name=Mythril Scythe
+item.adamantium_scythe.name=Adamantium Scythe
+item.onyx_scythe.name=Onyx Scythe

@@ -1,0 +1,12 @@
+[
+{
+  "modid": "simpleoresbiomesoplenty",
+  "name": "SimpleOres Biomes O' Plenty Plugin",
+  "description": "Biomes O' Plenty scythes made with ores added by SimpleOres 2 and copper bucket with liquids added by Biomes O' Plenty.",
+  "version": "1.0",
+  "mcversion": "1.8.9",
+  "url": "",
+  "authorList": ["Adahel"],
+  "dependencies": [simpleores,BiomesOPlenty]
+}
+]

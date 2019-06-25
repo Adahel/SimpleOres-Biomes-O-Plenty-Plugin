@@ -1,0 +1,12 @@
+//Items
+item.copper_bucket_honey.name=蜜铜桶
+item.copper_bucket_blood.name=血铜桶
+item.copper_bucket_poison.name=毒铜桶
+item.copper_bucket_hot_spring_water.name=温泉水铜桶
+
+//Tools
+item.copper_scythe.name=铜镰刀
+item.tin_scythe.name=锡镰刀
+item.mythril_scythe.name=秘银镰刀
+item.adamantium_scythe.name=精金镰刀
+item.onyx_scythe.name=缟玛瑙镐镰刀
