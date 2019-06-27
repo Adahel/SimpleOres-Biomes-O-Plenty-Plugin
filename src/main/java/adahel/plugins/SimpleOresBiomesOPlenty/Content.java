@@ -14,10 +14,10 @@ public class Content {
 	}
 	
 	public static void doItems() {
-		copper_bucket_honey = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.honey, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(alexndr.plugins.SimpleOres.Content.copper_bucket).setUnlocalizedName("copper_bucket_honey");
-		copper_bucket_blood = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.blood, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(alexndr.plugins.SimpleOres.Content.copper_bucket).setUnlocalizedName("copper_bucket_blood");
-		copper_bucket_poison = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.poison, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(alexndr.plugins.SimpleOres.Content.copper_bucket).setUnlocalizedName("copper_bucket_poison");
-		copper_bucket_hot_spring_water = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.hot_spring_water, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(alexndr.plugins.SimpleOres.Content.copper_bucket).setUnlocalizedName("copper_bucket_hot_spring_water");
+		copper_bucket_honey = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.honey, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(getCopperBucket()).setUnlocalizedName("copper_bucket_honey");
+		copper_bucket_blood = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.blood, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(getCopperBucket()).setUnlocalizedName("copper_bucket_blood");
+		copper_bucket_poison = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.poison, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(getCopperBucket()).setUnlocalizedName("copper_bucket_poison");
+		copper_bucket_hot_spring_water = new SimpleBucket(SimpleOresBiomesOPlenty.plugin, BOPBlocks.hot_spring_water, SimpleOres.copperBucketType).setConfigEntry(Settings.copperBucket).setContainerItem(getCopperBucket()).setUnlocalizedName("copper_bucket_hot_spring_water");
 	}
 	
 	public static void doTools() {
@@ -28,7 +28,11 @@ public class Content {
 		onyx_scythe = new SimpleScythe(SimpleOresBiomesOPlenty.plugin, SimpleOres.toolOnyx).setConfigEntry(Settings.onyxTools).setCreativeTab(TabHelper.toolsTab()).setUnlocalizedName("onyx_scythe");
 	}
 	
-	public static Item 	copper_bucket_honey, copper_bucket_blood, copper_bucket_poison, copper_bucket_hot_spring_water;
+	public static Item getCopperBucket() {
+		return alexndr.plugins.SimpleOres.Content.copper_bucket;
+	}
+	
+	public static Item copper_bucket_honey, copper_bucket_blood, copper_bucket_poison, copper_bucket_hot_spring_water;
 	
 	public static Item copper_scythe, tin_scythe, mythril_scythe, adamantium_scythe, onyx_scythe;
 }

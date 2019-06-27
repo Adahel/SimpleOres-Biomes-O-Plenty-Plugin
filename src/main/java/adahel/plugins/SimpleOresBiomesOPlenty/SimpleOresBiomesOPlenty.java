@@ -6,6 +6,8 @@ import alexndr.api.registry.ContentRegistry;
 import alexndr.api.registry.Plugin;
 import alexndr.plugins.SimpleOres.SimpleOres;
 import biomesoplenty.api.block.BOPBlocks;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fluids.FluidContainerRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -35,6 +37,7 @@ public class SimpleOresBiomesOPlenty {
 		//Content
 		Recipes.initialize();
 		setBucketVariants();
+		registerFluidContainers();
 	}
 	
 	private static void setBucketVariants() {
@@ -43,5 +46,13 @@ public class SimpleOresBiomesOPlenty {
 		SimpleOres.copperBucketType.addVariant("blood", Content.copper_bucket_blood, BOPBlocks.blood);
 		SimpleOres.copperBucketType.addVariant("poison", Content.copper_bucket_poison, BOPBlocks.poison);
 		SimpleOres.copperBucketType.addVariant("hot_spring_water", Content.copper_bucket_hot_spring_water, BOPBlocks.hot_spring_water);
+	}
+	
+	private static void registerFluidContainers() {
+		LogHelper.verbose("SimpleOresBiomesOPlenty", "Registering fluid containers");
+		FluidContainerRegistry.registerFluidContainer(BOPBlocks.honey_fluid, new ItemStack(Content.copper_bucket_honey), new ItemStack(Content.getCopperBucket()));
+		FluidContainerRegistry.registerFluidContainer(BOPBlocks.blood_fluid, new ItemStack(Content.copper_bucket_blood), new ItemStack(Content.getCopperBucket()));
+		FluidContainerRegistry.registerFluidContainer(BOPBlocks.poison_fluid, new ItemStack(Content.copper_bucket_poison), new ItemStack(Content.getCopperBucket()));
+		FluidContainerRegistry.registerFluidContainer(BOPBlocks.hot_spring_water_fluid, new ItemStack(Content.copper_bucket_hot_spring_water), new ItemStack(Content.getCopperBucket()));
 	}
 }
